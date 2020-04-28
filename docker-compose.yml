@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  pipelinetask:
+    build:
+      context: .
+    image: pipelinetask:dev
+    volumes:
+      - "./:/src"
+    working_dir: "/src"
+    # entrypoint: ["npm"]
+    # command: ["install"]

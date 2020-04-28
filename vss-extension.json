@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "copy-files-over-ssh-v2-task",
+    "name": "Copy files over SSH V2",
+    "version": "0.0.4",
+    "publisher": "HealthFirstInc",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Copy files or build artifacts to a remote machine over SSH",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "copyFilesOverSSHV2/icon.png"        
+    },
+    "files": [
+        {
+            "path": "copyFilesOverSSHV2"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "copy-files-over-ssh-v2-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "copyFilesOverSSHV2"
+            }
+        }
+    ]
+}
